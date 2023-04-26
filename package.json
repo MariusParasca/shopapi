@@ -1,5 +1,5 @@
 {
-  "name": "refreshTokenAuth",
+  "name": "shopapi",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -20,6 +20,9 @@
     "joi-password-complexity": "^5.1.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.2.9"
+  },
+  "engines": {
+    "node": "16.x"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
