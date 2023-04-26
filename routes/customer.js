@@ -1,8 +1,8 @@
-import { Router } from 'express';
-import Customer from '../models/Customer.js';
-import { customerBodyValidation } from '../utils/validationSchema.js';
-import { mapCustomer } from '../mappers/customer.js';
-import auth from '../middleware/auth.js';
+const { Router } = require('express');
+const Customer = require('../models/Customer.js');
+const { customerBodyValidation } = require('../utils/validationSchema.js');
+const { mapCustomer } = require('../mappers/customer.js');
+const auth = require('../middleware/auth.js');
 
 const router = Router();
 
@@ -66,4 +66,4 @@ router.delete('/:id', async (req, res, next) => {
   }
 });
 
-export default router;
+module.exports = router;

@@ -1,4 +1,4 @@
-import jwt from 'jsonwebtoken';
+const jwt = require('jsonwebtoken');
 
 const auth = async (req, res, next) => {
   const token = req.header('x-access-token');
@@ -14,6 +14,6 @@ const auth = async (req, res, next) => {
   }
 };
 
-export default auth;
-// Mirela dragomir 
+module.exports = auth;
+// Mirela dragomir
 // Mariana stanc de la qualit test

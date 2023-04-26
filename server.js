@@ -1,12 +1,12 @@
-import express from 'express';
-import { config } from 'dotenv';
-import dbConnect from './dbConnect.js';
-import authRoutes from './routes/auth.js';
-import refreshTokenRoutes from './routes/refreshToken.js';
-import userRoutes from './routes/users.js';
-import customerRoutes from './routes/customer.js';
-import cors from 'cors';
-import auth from './middleware/auth.js';
+const express = require('express');
+const { config } = require('dotenv');
+const dbConnect = require('./dbConnect.js');
+const authRoutes = require('./routes/auth.js');
+const refreshTokenRoutes = require('./routes/refreshToken.js');
+const userRoutes = require('./routes/users.js');
+const customerRoutes = require('./routes/customer.js');
+const cors = require('cors');
+const auth = require('./middleware/auth.js');
 
 const app = express();
 

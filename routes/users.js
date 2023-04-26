@@ -1,11 +1,11 @@
-import { Router } from "express";
-import auth from "../middleware/auth.js";
-import roleCheck from "../middleware/roleCheck.js";
+const { Router } = require('express');
+const auth = require('../middleware/auth.js');
+const roleCheck = require('../middleware/roleCheck.js');
 
 const router = Router();
 
-router.get("/details", auth, (req, res) => {
-	res.status(200).json({ message: "user authenticated." });
+router.get('/details', auth, (req, res) => {
+  res.status(200).json({ message: 'user authenticated.' });
 });
 
-export default router;
+module.exports = router;
